@@ -1,13 +1,13 @@
 #! /bin/bash -eu
 
 echo "**** update uid and gid to ${PUID}:${PGID} ****"
-groupmod -o -g "$PGID" junv
-usermod -o -u "$PUID" junv
+groupmod -o -g "$PGID" SHAKUGAN
+usermod -o -u "$PUID" SHAKUGAN
 
 mkdir -p /app/.caddy
 mkdir -p /app/.cache
 
-chown -R junv:junv \
+chown -R SHAKUGAN:SHAKUGAN \
          /app \
          /app/.caddy \
          /app/.cache \
