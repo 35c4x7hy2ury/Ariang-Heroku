@@ -61,11 +61,10 @@ adduser -D -u 1000 junv \
   && cd rclone-* \
   && cp rclone /usr/local/bin/ \
   && chown junv:junv /usr/local/bin/rclone \
+  && cp app/conf/rclone.conf /usr/local/bin/rclone/rclone.conf
   && chmod 755 /usr/local/bin/rclone \
   && rm /app/${rclone_file} \
   && rm -rf /app/rclone-* \
-  && wget https://raw.githubusercontent.com/35c4x7hy2ury/Ariang-Heroku/main/conf/rclone.conf \
-  && cp rclone.conf /usr/local/bin/rclone/rclone.conf \
   && mkdir /usr/local/www/aria2/Download \
   && cd /usr/local/www/aria2 \
   && chmod +rw /app/conf/aria2.session \
