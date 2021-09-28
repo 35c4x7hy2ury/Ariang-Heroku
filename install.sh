@@ -38,7 +38,7 @@ esac
 filebrowser_file=${platform}-filebrowser.tar.gz
 ariang_file=AriaNg-${ariang_version}.zip
 
-adduser -D -u 1000 junv \
+adduser -D -u 1000 SHAKUGAN \
   && apk update \
   && apk add runit shadow wget bash curl openrc gnupg aria2 tar mailcap --no-cache \
   && wget -N https://github.com/caddyserver/caddy/releases/download/v${caddy_version}/${caddy_file} \
@@ -60,7 +60,7 @@ adduser -D -u 1000 junv \
   && unzip ${rclone_file} \
   && cd rclone-* \
   && cp rclone /usr/local/bin/ \
-  && chown junv:junv /usr/local/bin/rclone \
+  && chown SHAKUGAN:SHAKUGAN /usr/local/bin/rclone \
   && chmod 755 /usr/local/bin/rclone \
   && rm /app/${rclone_file} \
   && rm -rf /app/rclone-* \
