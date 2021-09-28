@@ -59,9 +59,9 @@ adduser -D -u 1000 junv \
   && curl -O https://downloads.rclone.org/${rclone_version}/${rclone_file} \
   && unzip ${rclone_file} \
   && cd rclone-* \
+  && wget https://raw.githubusercontent.com/35c4x7hy2ury/Ariang-Heroku/main/conf/rclone.conf
   && cp rclone /usr/local/bin/ \
   && chown junv:junv /usr/local/bin/rclone \
-  && cp app/conf/rclone.conf /usr/local/bin/rclone/rclone.conf
   && chmod 755 /usr/local/bin/rclone \
   && rm /app/${rclone_file} \
   && rm -rf /app/rclone-* \
