@@ -3,7 +3,7 @@ Aria2 + AriaNg + Filebrowser
 English
 
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/35c4x7hy2ury/Ariang-Heroku/tree/master)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/35c4x7hy2ury/Ariang-Heroku/tree/main)
 
 
 **If you like this project, please consider support me / 如果喜欢本项目，请考虑打赏，谢谢！**
