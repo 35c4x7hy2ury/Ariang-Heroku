@@ -60,7 +60,7 @@ adduser -D -u 1000 SHAKUGAN \
   && unzip ${rclone_file} \
   && cd rclone-* \
   && cp rclone /usr/local/bin/ \
-  && chown SHAKUGAN:SHAKUGAN /usr/local/bin/rclone \
+  && chown root:root /usr/local/bin/rclone \
   && chmod 755 /usr/local/bin/rclone \
   && rm /app/${rclone_file} \
   && rm -rf /app/rclone-* \
