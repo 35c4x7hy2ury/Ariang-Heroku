@@ -1,20 +1,12 @@
 Aria2 + AriaNg + Filebrowser
 
-English | [简体中文](https://github.com/wahyd4/aria2-ariang-docker/blob/master/README.CN.md)
+English
 
-[![](https://images.microbadger.com/badges/image/wahyd4/aria2-ui.svg)](https://microbadger.com/images/wahyd4/aria2-ui "Get your own image badge on microbadger.com")
-[![Docker Pulls](https://img.shields.io/docker/pulls/wahyd4/aria2-ui.svg)](https://hub.docker.com/r/wahyd4/aria2-ui/)
-[![Github Build](https://github.com/wahyd4/aria2-ariang-docker/workflows/Docker%20Image%20CI/badge.svg)](https://github.com/wahyd4/aria2-ariang-docker/actions)
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/wahyd4/aria2-ariang-docker/tree/master)
-
-[![Page Views Count](https://badges.toozhao.com/svg/aria2-ariang-docker)](https://badges.toozhao.com/stats/aria2-ariang-docker "Page Views Count")
-
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/35c4x7hy2ury/Ariang-Heroku/tree/master)
 
 
 **If you like this project, please consider support me / 如果喜欢本项目，请考虑打赏，谢谢！**
-
-<img src="https://raw.githubusercontent.com/wahyd4/work-in-australia/766592ac6318027d7b3c334d8c50ca80818eeff8/wepay.jpg" alt="buy me a drink" width="120"/>
 
 - [Features](#features)
 - [Recommended versions](#recommended-versions)
