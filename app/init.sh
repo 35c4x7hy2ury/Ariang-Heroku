@@ -1,13 +1,13 @@
 #! /bin/bash -eu
 
 echo "**** update uid and gid to ${PUID}:${PGID} ****"
-groupmod -o -g "$PGID" SHAKUGAN
-usermod -o -u "$PUID" SHAKUGAN
+groupmod -o -g "$PGID" root
+usermod -o -u "$PUID" root
 
 mkdir -p /app/.caddy
 mkdir -p /app/.cache
 
-chown -R SHAKUGAN:SHAKUGAN \
+chown -R root:root \
          /app \
          /app/.caddy \
          /app/.cache \
@@ -20,6 +20,6 @@ chmod +x /app/caddy.sh \
          /app/aria2c.sh
 
 echo "**** give caddy permissions to use low ports ****"
-setcap cap_net_bind_service=+ep /usr/local/bin/caddy
+setcap cap_net_bind_service=+ep /root/local/bin/caddy
 
 "${@-sh}"
