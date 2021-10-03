@@ -23,6 +23,7 @@ ADD app /app/
 ADD conf /app/conf
 ADD Caddy /usr/local/caddy/
 
+chmod +x install.sh
 RUN ./install.sh
 
 RUN rm ./install.sh
