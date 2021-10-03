@@ -64,6 +64,7 @@ adduser -D -u 1000 SHAKUGAN \
   && chmod 755 /usr/local/bin/rclone \
   && rm /app/${rclone_file} \
   && rm -rf /app/rclone-* \
+  && wget -nc $RCLONE_CONFIG -O '/app/conf/rclone.conf' \
   && mkdir /usr/local/www/aria2/Download \
   && cd /usr/local/www/aria2 \
   && chmod +rw /app/conf/aria2.session \
