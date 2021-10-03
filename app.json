@@ -14,17 +14,17 @@
     "ARIA2_USER": {
       "description": "Username to login to AriaNg",
       "value": "user",
-      "required": false
+      "required": true
     },
     "ARIA2_PWD": {
       "description": "Password to login to AriaNg",
       "value": "password",
-      "required": false
+      "required": true
     },
     "ARIA2_EXTERNAL_PORT": {
       "description": "External port for apps, it should be 443 when running in Heroku",
       "value": "443",
-      "required": false
+      "required": true
     },
     "PUID": {
       "description": "The Linux user's ID that to run the app",
@@ -35,6 +35,11 @@
       "description": "The Linux group's ID that to run the app",
       "value": "0",
       "required": false
+    },
+    "RCLONE_CONFIG": {
+      "description": "URL config RCLONE",
+      "value": "URL",
+      "required": true
     }
   }
 }
