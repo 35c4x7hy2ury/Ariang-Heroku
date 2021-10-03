@@ -2,7 +2,7 @@ FROM alpine:edge
 
 LABEL AUTHOR=SHAKUGAN
 
-WORKDIR /app.josn
+WORKDIR /app
 
 ENV RPC_SECRET=""
 ENV ENABLE_AUTH=false
