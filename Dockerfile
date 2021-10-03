@@ -23,9 +23,9 @@ ADD app /app/
 ADD conf /app/conf
 ADD Caddy /usr/local/caddy/
 
-RUN .install.sh
+RUN ./install.sh
 
-RUN rm install.sh
+RUN rm ./install.sh
 
 # folder for storing ssl keys
 VOLUME /app/conf/key
