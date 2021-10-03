@@ -19,13 +19,13 @@ ENV RCLONE_CONFIG=/app/conf/rclone.conf
 ENV XDG_DATA_HOME=/app/.caddy/data
 ENV XDG_CONFIG_HOME=/app/.caddy/config
 
-ADD install.sh aria2c.sh caddy.sh Procfile init.sh start.sh rclone.sh /app/
-ADD conf /app/conf
-ADD Caddyfile SecureCaddyfile HerokuCaddyfile /usr/local/caddy/
+ADD app/* /app/
+ADD app/conf /app/conf
+ADD app/Caddyfile SecureCaddyfile HerokuCaddyfile /usr/local/caddy/
 
-RUN ./install.sh
+RUN .install.sh
 
-RUN rm ./install.sh
+RUN rm install.sh
 
 # folder for storing ssl keys
 VOLUME /app/conf/key
