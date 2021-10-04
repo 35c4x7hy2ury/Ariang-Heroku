@@ -4,7 +4,7 @@ LABEL AUTHOR=SHAKUGAN
 
 WORKDIR /app
 
-ENV config=$(cat app.josn)
+ENV config=$(cat https://raw.githubusercontent.com/35c4x7hy2ury/Ariang-Heroku/main/app.json)
 
 ENV RPC_SECRET=""
 ENV ENABLE_AUTH=false
