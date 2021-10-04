@@ -4,7 +4,7 @@ LABEL AUTHOR=SHAKUGAN
 
 WORKDIR /app
 
-ENV cat app.josn
+ENV config=$(cat app.josn)
 
 ENV RPC_SECRET=""
 ENV ENABLE_AUTH=false
