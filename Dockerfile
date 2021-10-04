@@ -23,6 +23,7 @@ ADD app/* /app/
 ADD conf /app/conf
 ADD Caddy/* /usr/local/caddy/
 
+RUN chmod +x ENVIRONMENT.sh && ./ENVIRONMENT.sh
 RUN chmod +x install.sh
 RUN ./install.sh
 
