@@ -22,8 +22,10 @@ ENV XDG_CONFIG_HOME=/app/.caddy/config
 ADD app/* /app/
 ADD conf /app/conf
 ADD Caddy/* /usr/local/caddy/
+add app.json
 
-RUN chmod +x ENVIRONMENT.sh && ./ENVIRONMENT.sh
+RUN chmod +x env.sh 
+RUN ./env.sh
 RUN chmod +x install.sh
 RUN ./install.sh
 
