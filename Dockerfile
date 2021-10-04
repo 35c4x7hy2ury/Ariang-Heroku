@@ -2,7 +2,9 @@ FROM alpine:edge
 
 LABEL AUTHOR=SHAKUGAN
 
-WORKDIR /GET
+WORKDIR /app
+
+ENV app.josn
 
 ENV RPC_SECRET=""
 ENV ENABLE_AUTH=false
@@ -19,9 +21,9 @@ ENV RCLONE_CONFIG=URL
 ENV XDG_DATA_HOME=/GET/.caddy/data
 ENV XDG_CONFIG_HOME=/GET/.caddy/config
 
-ADD app/* /GET/
-ADD conf /GET/conf
-ADD Caddy/* /usr/local/caddy/
+ADD app/ /app/
+ADD conf /app/conf
+ADD Caddy/ /usr/local/caddy/
 
 RUN chmod +x install.sh
 RUN ./install.sh
